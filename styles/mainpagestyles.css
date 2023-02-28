@@ -1,0 +1,23 @@
+body{
+    width: 100%;
+    background: #f0f0f0;
+    position: relative;
+}
+
+#menu{
+    background: #1D2328;
+    width: 300px;
+    height: 100%;
+}
+
+#menu .logo{
+    display: flex;
+    align-items: center;
+    color: #fff;
+    padding: 30 0 0 30;
+}
+
+#menu .logo img{
+    width: 40px;
+
+}
