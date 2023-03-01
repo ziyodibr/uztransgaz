@@ -3,8 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <title>ICT Uztransgaz</title>
-    <script src="https://kit.fontawesome.com/31ab4ee17e.js" crossorigin="anonymous"></script>
+    
     <link rel="stylesheet" href="../styles/mainpagestyles.css">
+    <script src="https://kit.fontawesome.com/31ab4ee17e.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
 </head>
 <body>
     <section class="menu">
@@ -34,6 +37,9 @@
     <section class="interface">
         <div class="navigation">
             <div class="n1">
+                <div>
+                    <i id="menu-btn" class="fa-solid fa-bars"></i>
+                </div>
                 <div class="search">
                     <i class="fa-solid fa-magnifying-glass"></i>
                     <input type="text" placeholder="Search">
@@ -198,5 +204,11 @@
         </div>
 
     </section>
+
+    <script>
+        $('#menu-btn').click(function(){
+            $('.menu').toggleClass(".active");
+        })
+    </script>
 </body>
 </html>
